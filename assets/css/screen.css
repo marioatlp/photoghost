@@ -1,7 +1,6 @@
 /* ==========================================================================
    Table of Contents
    ========================================================================== */
-
 /*
 
     0.  Includes
@@ -17,13 +16,10 @@
     10. Media Queries (Mobile)
 
  */
-
 /* ==========================================================================
    0. Includes - Ground zero
    ========================================================================== */
-
 @import url(normalize.css);
-
 
 /* ==========================================================================
    1. Icons - Sets up the icon font and respective classes
@@ -32,20 +28,20 @@
 /* Import the font file with the icons in it */
 @font-face {
     font-family: 'icons';
-    src:url('../fonts/icons.eot');
-    src:url('../fonts/icons.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/icons.woff') format('woff'),
-        url('../fonts/icons.ttf') format('truetype'),
-        url('../fonts/icons.svg#icons') format('svg');
+    src: url('../fonts/icons.eot');
+    src: url('../fonts/icons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icons.woff') format('woff'),
+    url('../fonts/icons.ttf') format('truetype'),
+    url('../fonts/icons.svg#icons') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 /* Apply these base styles to all icons */
-.icon-ghost:before, 
-.icon-feed:before, 
-.icon-twitter:before, 
-.icon-google-plus:before, 
+.icon-ghost:before,
+.icon-feed:before,
+.icon-twitter:before,
+.icon-google-plus:before,
 .icon-facebook:before {
     font-family: 'icons';
     speak: none;
@@ -58,25 +54,28 @@
     text-decoration: none;
 }
 
-/* Each icon is created by inserting the corret character into the 
+/* Each icon is created by inserting the corret character into the
    content of the :before pseudo element. Like a boss. */
 .icon-ghost:before {
     content: "\e000";
 }
+
 .icon-feed:before {
     content: "\e001";
 }
+
 .icon-twitter:before {
     content: "\e002";
     font-size: 1.1em;
 }
+
 .icon-google-plus:before {
     content: "\e003";
 }
+
 .icon-facebook:before {
     content: "\e004";
 }
-
 
 /* ==========================================================================
    2. General - Setting up some base styles
@@ -157,7 +156,6 @@ h4 a, h5 a, h6 a {
     color: #50585D;
 }
 
-
 p, ul, ol, dl {
     margin: 0 0 1.6em;
 }
@@ -209,17 +207,21 @@ blockquote p {
 blockquote small {
     display: inline-block;
     margin: 0.8em 0 0.8em 1.5em;
-    font-size:0.9em;
+    font-size: 0.9em;
     color: #ccc;
 }
 
-blockquote small:before { content: '\2014 \00A0'; }
-
-blockquote cite {
-    font-weight:bold;
+blockquote small:before {
+    content: '\2014 \00A0';
 }
 
-blockquote cite a { font-weight: normal; }
+blockquote cite {
+    font-weight: bold;
+}
+
+blockquote cite a {
+    font-weight: normal;
+}
 
 mark {
     background-color: #ffc336;
@@ -270,16 +272,15 @@ kbd {
     font-weight: bold;
     background: #f4f4f4;
     border-radius: 4px;
-    box-shadow: 
-        0 1px 0 rgba(0, 0, 0, 0.2), 
-        0 1px 0 0 #fff inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2),
+    0 1px 0 0 #fff inset;
 }
 
 table {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 1.6em 0;
-    width:100%;
+    width: 100%;
     max-width: 100%;
     background-color: transparent;
 }
@@ -293,7 +294,9 @@ table td {
     border-top: 1px solid #efefef;
 }
 
-table th { color: #000; }
+table th {
+    color: #000;
+}
 
 table caption + thead tr:first-child th,
 table caption + thead tr:first-child td,
@@ -304,9 +307,13 @@ table thead:first-child tr:first-child td {
     border-top: 0;
 }
 
-table tbody + tbody { border-top: 2px solid #efefef; }
+table tbody + tbody {
+    border-top: 2px solid #efefef;
+}
 
-table table table { background-color: #fff; }
+table table table {
+    background-color: #fff;
+}
 
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
@@ -315,7 +322,7 @@ table tbody > tr:nth-child(odd) > th {
 
 table.plain tbody > tr:nth-child(odd) > td,
 table.plain tbody > tr:nth-child(odd) > th {
-   background: transparent;
+    background: transparent;
 }
 
 iframe, .fluid-width-video-wrapper {
@@ -345,55 +352,55 @@ margin on the iframe, cause it breaks stuff. */
 
 @font-face {
     font-family: 'Alegreya SC';
-    src:url('../fonts/AlegreyaSC-Regular-webfont.eot');
-    src:url('../fonts/AlegreyaSC-Regular-webfont.eot') format('embedded-opentype'),
-        url('../fonts/AlegreyaSC-Regular-webfont.woff') format('woff'),
-        url('../fonts/AlegreyaSC-Regular-webfont.ttf') format('truetype'),
-        url('../fonts/AlegreyaSC-Regular-webfont.svg') format('svg');
+    src: url('../fonts/AlegreyaSC-Regular-webfont.eot');
+    src: url('../fonts/AlegreyaSC-Regular-webfont.eot') format('embedded-opentype'),
+    url('../fonts/AlegreyaSC-Regular-webfont.woff') format('woff'),
+    url('../fonts/AlegreyaSC-Regular-webfont.ttf') format('truetype'),
+    url('../fonts/AlegreyaSC-Regular-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Arimo';
-    src:url('../fonts/arimo.eot');
-    src:url('../fonts/arimo.eot') format('embedded-opentype'),
-        url('../fonts/arimo.woff') format('woff'),
-        url('../fonts/arimo.ttf') format('truetype'),
-        url('../fonts/arimo.svg') format('svg');
+    src: url('../fonts/arimo.eot');
+    src: url('../fonts/arimo.eot') format('embedded-opentype'),
+    url('../fonts/arimo.woff') format('woff'),
+    url('../fonts/arimo.ttf') format('truetype'),
+    url('../fonts/arimo.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Linear';
-    src:url('../fonts/linear-webfont.eot');
-    src:url('../fonts/linear-webfont.eot') format('embedded-opentype'),
-        url('../fonts/linear-webfont.woff') format('woff'),
-        url('../fonts/linear-webfont.ttf') format('truetype'),
-        url('../fonts/linear-webfont.svg') format('svg');
+    src: url('../fonts/linear-webfont.eot');
+    src: url('../fonts/linear-webfont.eot') format('embedded-opentype'),
+    url('../fonts/linear-webfont.woff') format('woff'),
+    url('../fonts/linear-webfont.ttf') format('truetype'),
+    url('../fonts/linear-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src:url('../fonts/montserrat-regular-webfont.eot');
-    src:url('../fonts/montserrat-regular-webfont.eot') format('embedded-opentype'),
-        url('../fonts/montserrat-regular-webfont.woff') format('woff'),
-        url('../fonts/montserrat-regular-webfont.ttf') format('truetype'),
-        url('../fonts/montserrat-regular-webfont.svg') format('svg');
+    src: url('../fonts/montserrat-regular-webfont.eot');
+    src: url('../fonts/montserrat-regular-webfont.eot') format('embedded-opentype'),
+    url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+    url('../fonts/montserrat-regular-webfont.ttf') format('truetype'),
+    url('../fonts/montserrat-regular-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src:url('../fonts/OpenSans-Regular-webfont.eot');
-    src:url('../fonts/OpenSans-Regular-webfont.eot') format('embedded-opentype'),
-        url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
-        url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-        url('../fonts/OpenSans-Regular-webfont.svg') format('svg');
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot') format('embedded-opentype'),
+    url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+    url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+    url('../fonts/OpenSans-Regular-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -423,7 +430,6 @@ margin on the iframe, cause it breaks stuff. */
     vertical-align: middle;
 }
 
-
 /* ==========================================================================
    4. General - The main styles for the the theme
    ========================================================================== */
@@ -433,7 +439,7 @@ margin on the iframe, cause it breaks stuff. */
     width: 100%;
     height: 80px;
     color: #aaa;
-    background: rgba(0,0,0,0.9) no-repeat center center;
+    background: rgba(0, 0, 0, 0.9) no-repeat center center;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -457,7 +463,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 38px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-	margin: 17px 0;
+    margin: 17px 0;
 }
 
 .blog-description {
@@ -466,7 +472,7 @@ margin on the iframe, cause it breaks stuff. */
     line-height: 1.5em;
     font-weight: 300;
     font-family: 'arimo', serif;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 .post-inner {
@@ -482,7 +488,7 @@ margin on the iframe, cause it breaks stuff. */
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
-    width:100%;
+    width: 100%;
     padding-bottom: 2em;
     word-break: break-word;
     hyphens: auto;
@@ -595,15 +601,20 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 @-webkit-keyframes stretchdelay {
-    0%, 40%, 100% { -webkit-transform: scaleY(0.5); }  
-    20% { -webkit-transform: scaleY(1.0); }
+    0%, 40%, 100% {
+        -webkit-transform: scaleY(0.5);
+    }
+    20% {
+        -webkit-transform: scaleY(1.0);
+    }
 }
 
 @keyframes stretchdelay {
     0%, 40%, 100% {
         -webkit-transform: scaleY(0.5);
         transform: scaleY(0.5);
-    }  20% {
+    }
+    20% {
         -webkit-transform: scaleY(1.0);
         transform: scaleY(1.0);
     }
@@ -628,6 +639,7 @@ margin on the iframe, cause it breaks stuff. */
 .mainpage.tag-photos p {
     color: #eee;
 }
+
 .mainpage p {
     color: #ccc;
 }
@@ -650,10 +662,10 @@ margin on the iframe, cause it breaks stuff. */
 
 .post-content {
     background-color: #fff;
-    box-shadow: 0 0 8px 6px rgba(0,0,0,.1);
+    box-shadow: 0 0 8px 6px rgba(0, 0, 0, .1);
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    margin:  -5em 10% 0;
+    margin: -5em 10% 0;
     opacity: 1;
     padding: 3em 50px 2em;
     z-index: 200;
@@ -776,7 +788,6 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 1.1rem;
 }
 
-
 /* ==========================================================================
    7. Pagination - Tools to let you flick between pages
    ========================================================================== */
@@ -826,7 +837,6 @@ margin on the iframe, cause it breaks stuff. */
 .newer-posts:hover {
     border-color: #bbb;
 }
-
 
 /* ==========================================================================
    8. Footer - The bottom of every page
@@ -898,7 +908,7 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Add a box shadow to on hover */
 .subscribe:hover {
-    box-shadow: rgba(0,0,0,0.05) 0 0 0 3px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 3px;
     transition: box-shadow 0.25s;
 }
 
@@ -908,35 +918,35 @@ margin on the iframe, cause it breaks stuff. */
 
 /* CSS tooltip saying "Subscribe!" - initially hidden */
 .tooltip {
-    opacity:0;
+    opacity: 0;
     display: inline-block;
     padding: 5px 8px 5px 8px;
-    position:absolute;
+    position: absolute;
     top: -23px;
     left: -21px;
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 1.1rem;
     line-height: 1em;
     text-align: center;
     background: #444;
-    border-radius:20px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     transition: opacity 0.3s ease, top 0.3s ease;
 }
 
 /* The little chiclet arrow under the tooltip, pointing down */
 .tooltip:after {
-    content:"";
-    border-width:5px 5px 0 5px;
-    border-style:solid;
+    content: "";
+    border-width: 5px 5px 0 5px;
+    border-style: solid;
     border-color: #444 transparent;
-    display:block;
-    position:absolute;
-    bottom:-4px;
-    left:50%;
-    margin-left:-5px;
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    margin-left: -5px;
     z-index: 220;
-    width:0;
+    width: 0;
 }
 
 /* On hover, show the tooltip! */
@@ -1027,7 +1037,7 @@ margin on the iframe, cause it breaks stuff. */
         max-height: 80px;
     }
 
-    .inner, 
+    .inner,
     .pagination {
         width: auto;
         margin-left: 16px;
@@ -1035,7 +1045,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .post {
-        width:auto;
+        width: auto;
         font-size: 0.8em;
         line-height: 1.6em;
     }
@@ -1043,7 +1053,6 @@ margin on the iframe, cause it breaks stuff. */
     .blog-description {
         font-size: 1.5rem;
     }
-
 
     h1, h2 {
         font-size: 3rem;
