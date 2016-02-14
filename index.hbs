@@ -9,8 +9,8 @@
 
     {{! Each post will be output using this markup }}
     {{#foreach posts}}
+    <article class="mainpage {{post_class}} {{#if image}}featured-image" style="background-image: url('{{image}}'){{/if}}">
 
-    <article class="mainpage {{post_class}}">
         <div class="post-inner">
             <header class="post-header">
                 <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
@@ -29,7 +29,5 @@
 
     {{!! After all the posts, we have the previous/next pagination links }}
     {{pagination}}
-
-    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
 </main>

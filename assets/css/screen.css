@@ -481,7 +481,7 @@ margin on the iframe, cause it breaks stuff. */
     width: 25%;
 }
 
-.tag-photos .post-inner {
+.featured-image .post-inner {
     padding-top: 7em;
 }
 
@@ -620,7 +620,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 }
 
-.mainpage.post.tag-photos {
+.mainpage.post.featured-image {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -636,7 +636,7 @@ margin on the iframe, cause it breaks stuff. */
     padding-top: 1em;
 }
 
-.mainpage.tag-photos p {
+.mainpage.featured-image p {
     color: #eee;
 }
 
@@ -738,7 +738,7 @@ margin on the iframe, cause it breaks stuff. */
     height: 300px;
 }
 
-.tag-photos.no-main .post-head {
+.featured-image.no-main .post-head {
     height: 300px;
 }
 
@@ -746,7 +746,7 @@ margin on the iframe, cause it breaks stuff. */
     padding-top: 75px;
 }
 
-.tag-photos.no-main .post-head .post-title {
+.featured-image.no-main .post-head .post-title {
     padding-top: 75px;
 }
 
@@ -766,10 +766,6 @@ margin on the iframe, cause it breaks stuff. */
 
 .site-head a:hover {
     color: #666;
-}
-
-[alt="main-image"] {
-    display: none !important;
 }
 
 /* ==========================================================================
@@ -956,7 +952,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 @media only screen and (max-width: 1400px) {
-    .mainpage.post.tag-photos {
+    .mainpage.post.featured-image {
         height: 800px;
     }
 
@@ -966,7 +962,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 @media only screen and (max-width: 1050px) {
-    .mainpage.post.tag-photos {
+    .mainpage.post.featured-image {
         height: 725px;
     }
 
@@ -1120,7 +1116,7 @@ margin on the iframe, cause it breaks stuff. */
         margin: 27px 0;
     }
 
-    .mainpage.post.tag-photos {
+    .mainpage.post.featured-image {
         height: 650px;
     }
 

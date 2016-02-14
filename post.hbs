@@ -18,7 +18,7 @@
         {{! Everything inside the #post tags pulls data from the post }}
         {{#post}}
 
-            <div class="post-head">
+            <div class="post-head{{#if image}} featured-image" style="background-image: url('{{image}}'){{/if}}">
                 <h1 class="post-title">{{{title}}}</h1>
                 <span class="post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='MMMM DD, YYYY'}}</time></span>
             </div>
@@ -55,7 +55,5 @@
         {{/post}}
 
     </article>
-
-    <script type="text/javascript" src="{{asset "js/post.js"}}"></script>
 
 </main>
