@@ -483,6 +483,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .featured-image .post-inner {
     padding-top: 7em;
+    text-shadow: 1px 1px 10px #444;
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
@@ -499,7 +500,6 @@ margin on the iframe, cause it breaks stuff. */
     font: 56px/56px 'Alegreya SC', Arial, sans-serif;
     margin: 0 0 0.25em 0;
     text-align: center;
-    text-shadow: 1px 1px 2px #444;
     text-transform: uppercase;
 }
 
@@ -523,7 +523,6 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 19px;
     letter-spacing: 0.5px;
     line-height: 1.4em;
-    text-shadow: 1px 1px 2px #444;
 }
 
 .post-excerpt p:first-child:first-letter {
@@ -544,7 +543,6 @@ margin on the iframe, cause it breaks stuff. */
     margin: 0 0 2em 0;
     letter-spacing: 1px;
     text-align: center;
-    text-shadow: 1px 1px 2px #444;
     text-transform: uppercase;
 }
 
@@ -732,7 +730,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .post-head {
-    background-position: center center;
+    background-position: center 25%;
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
