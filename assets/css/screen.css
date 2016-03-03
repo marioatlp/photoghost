@@ -235,7 +235,7 @@ code, tt {
     border: 1px solid #E3EDF3;
     background: #272822;
     border-radius: 2px;
-    color:#FFF;
+    color: #FFF;
 }
 
 pre {
@@ -465,6 +465,7 @@ margin on the iframe, cause it breaks stuff. */
     font-weight: 400;
     font-family: 'Alegreya SC', Arial, sans-serif;
     margin: 17px 0;
+    display: inline-block;
 }
 
 .blog-description {
@@ -479,12 +480,18 @@ margin on the iframe, cause it breaks stuff. */
 .post-inner {
     margin-left: 6.5%;
     padding-top: 3em;
-    width: 25%;
+    width: 85%;
+}
+
+.post-header {
+    width: 35%;
 }
 
 .featured-image .post-inner {
-    padding-top: 7em;
+    padding-top: 3em;
     text-shadow: 1px 1px 10px #444;
+    position: absolute;
+    bottom: 25px;
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
@@ -532,7 +539,7 @@ margin on the iframe, cause it breaks stuff. */
     line-height: 0.5;
     padding-right: 7px;
     padding-left: 3px;
-    font-family: "Linear", serif;
+    font-family: 'Alegreya SC', Arial, sans-serif;
     padding-top: 10px;
 }
 
@@ -623,16 +630,17 @@ margin on the iframe, cause it breaks stuff. */
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 1000px;
+    min-height: 850px;
     margin-bottom: 0;
     overflow: hidden;
 }
 
 .mainpage.post {
     border-bottom: 1px solid #333;
-    height: auto;
+    height: 100%;
     min-height: 340px;
     padding-top: 1em;
+    position: relative;
 }
 
 .mainpage.featured-image p {
@@ -765,6 +773,23 @@ margin on the iframe, cause it breaks stuff. */
 
 .site-head a:hover {
     color: #666;
+}
+
+.site-head .nav-menu {
+    margin: 17px 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.site-head .nav-menu li {
+    font-size: 21px;
+    display: inline-block;
+    padding-left: 8px;
+    line-height: 1.2em;
+}
+
+li.nav-current a {
+    color: white;
 }
 
 /* ==========================================================================
@@ -952,11 +977,7 @@ margin on the iframe, cause it breaks stuff. */
 
 @media only screen and (max-width: 1400px) {
     .mainpage.post.featured-image {
-        height: 800px;
-    }
-
-    .post-inner {
-        width: 35%;
+        min-height: 800px;
     }
 }
 
@@ -1022,8 +1043,19 @@ margin on the iframe, cause it breaks stuff. */
         margin: 22px 0;
     }
 
-    .post-inner {
+    .post-header {
         width: 50%;
+    }
+
+    .post-inner {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .featured-image .post-inner {
+        position: relative;
     }
 }
 
@@ -1075,9 +1107,13 @@ margin on the iframe, cause it breaks stuff. */
         font-size: 1.3rem;
     }
 
+    .post-header {
+        width: 100%;
+    }
+
     .post-excerpt {
         margin: 0 5%;
-        width: 90%
+        width: 90%;
     }
 
     .post-footer {
@@ -1116,7 +1152,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .mainpage.post.featured-image {
-        height: 650px;
+        min-height: 650px;
     }
 
     .post-inner {
@@ -1133,10 +1169,10 @@ margin on the iframe, cause it breaks stuff. */
         padding: 50px 0 75px;
     }
 
-    .post-head.featured-image{
+    .post-head.featured-image {
         padding-bottom: 80px;
     }
-    
+
     .main .post-head .post-title {
         padding-top: 0 !important;
         margin: 0 10px 0.25em;
@@ -1156,6 +1192,13 @@ margin on the iframe, cause it breaks stuff. */
         font-size: 20px;
     }
 
+    .site-head .nav-menu {
+        padding-left: 15px;
+    }
+
+    .site-head .nav-menu li {
+        font-size: 15px;
+    }
 }
 
 /* ==========================================================================
