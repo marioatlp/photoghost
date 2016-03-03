@@ -1057,6 +1057,23 @@ li.nav-current a {
     .featured-image .post-inner {
         position: relative;
     }
+
+    .blog-title {
+        font-size: 24px;
+        margin: 10px 0 0;
+    }
+
+    .site-head .vertical {
+        margin: 0 auto;
+        display: table;
+        text-align: center;
+    }
+
+    .site-head .nav-menu {
+        margin: 0 auto;
+        padding-left: 0;
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1148,7 +1165,6 @@ li.nav-current a {
     .blog-title {
         font-family: 'Alegreya SC', Arial, sans-serif;
         font-size: 24px;
-        margin: 27px 0;
     }
 
     .mainpage.post.featured-image {
@@ -1190,14 +1206,6 @@ li.nav-current a {
 
     .author p {
         font-size: 20px;
-    }
-
-    .site-head .nav-menu {
-        padding-left: 15px;
-    }
-
-    .site-head .nav-menu li {
-        font-size: 15px;
     }
 }
 
