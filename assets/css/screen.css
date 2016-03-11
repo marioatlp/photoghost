@@ -508,7 +508,6 @@ margin on the iframe, cause it breaks stuff. */
     font: 56px/56px 'Alegreya SC', Arial, sans-serif;
     margin: 0 0 0.25em 0;
     text-align: center;
-    text-transform: uppercase;
 }
 
 .post-title a {
@@ -641,6 +640,7 @@ margin on the iframe, cause it breaks stuff. */
     min-height: 340px;
     padding-top: 1em;
     position: relative;
+    background: linear-gradient(to bottom,black, #181818);
 }
 
 .mainpage.featured-image p {
