@@ -733,6 +733,10 @@ margin on the iframe, cause it breaks stuff. */
     color: #666;
 }
 
+#disqus_thread {
+    margin: 50px;
+}
+
 .author p {
     margin: 0 0 0.4em;
     font-size: 24px;
@@ -1045,6 +1049,11 @@ li.nav-current a {
 
     .post-header {
         width: 50%;
+    }
+
+    #disqus_thread {
+        margin: 0 0;
+        padding: 20px;
     }
 
     .post-inner {
