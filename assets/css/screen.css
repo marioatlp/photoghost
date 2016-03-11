@@ -1204,6 +1204,7 @@ li.nav-current a {
     }
 
     .post-title {
+        font: 42px/42px 'Alegreya SC', Arial, sans-serif;
         word-wrap: break-word;
     }
 
